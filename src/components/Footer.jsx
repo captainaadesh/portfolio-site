@@ -17,32 +17,29 @@ export default function Footer() {
             AM.
           </p>
           <p className="text-xs mt-2">
-            Designed and built by Aadesh.
+            Designed and built with ❤️ by Aadesh.
           </p>
         </div>
 
         <div className="flex items-center gap-6">
-          <a href="https://github.com/" target="_blank"
+          <a href="https://github.com/captainaadesh" target="_blank"
             rel="noreferrer" aria-label="GitHub">
             <Github size={19} />
           </a>
 
-          <a href="https://linkedin.com/" target="_blank"
+          <a href="https://www.linkedin.com/in/aadesh-mirajkar" target="_blank"
             rel="noreferrer" aria-label="LinkedIn">
             <Linkedin size={19} />
           </a>
 
-          <a href="mailto:mirajkaraadesh@gmail.com"
-            className="flex items-center gap-1 text-sm">
-            Email <ArrowUpRight size={15} />
-          </a>
+        
         </div>
 
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 pb-8">
         <p className="text-xs">
-          © {new Date().getFullYear()} Aadesh. All rights reserved.
+          © {new Date().getFullYear()} All rights reserved.
         </p>
       </div>
     </footer>

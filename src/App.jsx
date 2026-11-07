@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
+import BackToTop from "./components/BackToTop";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function AnimatedRoutes() {
       </AnimatePresence>
 
       <Footer />
+      <BackToTop />
     </>
   );
 }

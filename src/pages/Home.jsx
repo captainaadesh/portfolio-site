@@ -83,14 +83,7 @@ export default function Home() {
               <ArrowUpRight size={18} />
             </Link>
 
-            <a
-              href="mailto:mirajkaraadesh@gmail.com"
-              className="inline-flex items-center gap-2
-                text-sm font-medium hover:text-blue-500 transition"
-            >
-              Let's connect
-              <ArrowUpRight size={17} />
-            </a>
+          
           </motion.div>
 
           <motion.div
@@ -197,31 +190,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT CTA */}
-
-      <section className="max-w-7xl mx-auto px-6 md:px-10 pb-32">
-        <div className="bg-[#F5F5F5] dark:bg-[#1B1B1B]
-          rounded-3xl p-10 md:p-20">
-
-          <p className="text-blue-500 text-sm mb-6">
-            HAVE A PROJECT IN MIND?
-          </p>
-
-          <h2 className="text-4xl md:text-7xl
-            font-semibold tracking-tighter max-w-3xl">
-            Let's create something meaningful.
-          </h2>
-
-          <a href="mailto:mirajkaraadesh@gmail.com"
-            className="mt-10 inline-flex items-center gap-3
-              bg-black text-white dark:bg-white dark:text-black
-              px-7 py-4 rounded-full text-sm">
-            Get in touch
-            <ArrowDownRight size={18} />
-          </a>
-        </div>
-      </section>
-
+     
     </main>
   );
 }

@@ -100,13 +100,13 @@ export default function About() {
             <p>
               I am <strong className="text-black dark:text-white">
                 Aadesh Mirajkar
-              </strong>. Currently working as a Software Engineering Specialist at{" "}
-              <a href="https://www.3ds.com/"
+              </strong>. Currently working as a <strong className="text-black dark:text-white">Software Engineer</strong> at{" "}
+              <a href="https://www.xoriant.com/"
                 target="_blank" rel="noreferrer"
                 className="text-black dark:text-white underline
                   underline-offset-4 decoration-gray-300
                   hover:text-blue-500 transition">
-                Dassault Systèmes
+                <strong className="text-black dark:text-white">Xoriant</strong>
               </a>{" "}
               in Pune. Basically, I am from{" "}
               <a href="https://en.wikipedia.org/wiki/Latur"
@@ -241,45 +241,7 @@ export default function About() {
           </div>
         </motion.section>
 
-        {/* CONTACT ME */}
-
-        <motion.section
-          id="contact"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="py-20 border-t
-            border-gray-200 dark:border-white/10"
-        >
-          <p className="text-blue-500 text-sm tracking-widest mb-8">
-            CONTACT ME
-          </p>
-
-          <h2 className="text-4xl md:text-6xl
-            font-semibold tracking-tighter">
-            Let's talk.
-          </h2>
-
-          <p className="mt-8 text-lg md:text-xl
-            text-gray-500 dark:text-gray-400
-            max-w-2xl leading-relaxed">
-            You can reach me via email for a quick response.
-            Do it without thinking twice. I love making
-            connections and am always up for a good conversation.
-          </p>
-
-          <a
-            href="mailto:mirajkaraadesh@gmail.com"
-            className="inline-flex items-center gap-3 mt-10
-              px-7 py-4 rounded-full
-              bg-black text-white dark:bg-white dark:text-black
-              text-sm font-medium hover:scale-105 transition-transform"
-          >
-            <Mail size={18} />
-            mirajkaraadesh@gmail.com
-            <ArrowUpRight size={17} />
-          </a>
-        </motion.section>
+       
 
         {/* SOCIAL PROFILES */}
 
