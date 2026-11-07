@@ -18,7 +18,7 @@ export default function Navbar() {
       border-b border-black/5 dark:border-white/10
       bg-white/80 dark:bg-[#101010]/80 backdrop-blur-xl">
 
-      <nav className="max-w-7xl mx-auto px-6 md:px-10 h-20
+      <nav aria-label="Main navigation" className="max-w-7xl mx-auto px-6 md:px-10 h-20
         flex items-center justify-between">
 
         <Link to="/" className="text-2xl font-bold tracking-tighter">
@@ -56,8 +56,11 @@ export default function Navbar() {
           </button>
 
           <button
+
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle navigation"
+            aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
             className="md:hidden p-2"
           >
             {menuOpen ? <X /> : <Menu />}
@@ -66,7 +69,7 @@ export default function Navbar() {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden px-6 pb-6 flex flex-col gap-5">
+        <div id="mobile-navigation" className="md:hidden px-6 pb-6 flex flex-col gap-5">
           {links.map((link) => (
             <NavLink
               key={link.path}

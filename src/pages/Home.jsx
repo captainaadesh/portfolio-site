@@ -92,12 +92,12 @@ export default function Home() {
             transition={{ delay: 1 }}
             className="mt-20 flex items-center gap-6"
           >
-            <a href="https://github.com/" target="_blank"
+            <a href="https://github.com/captainaadesh" target="_blank"
               rel="noreferrer" aria-label="GitHub">
               <Github className="text-gray-400 hover:text-blue-500 transition" />
             </a>
 
-            <a href="https://linkedin.com/" target="_blank"
+            <a href="https://www.linkedin.com/in/aadesh-mirajkar/" target="_blank"
               rel="noreferrer" aria-label="LinkedIn">
               <Linkedin className="text-gray-400 hover:text-blue-500 transition" />
             </a>
