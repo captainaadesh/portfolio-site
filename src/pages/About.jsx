@@ -278,7 +278,9 @@ export default function About() {
                   key={social.name}
                   href={social.url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit my ${social.name} profile`}
+                  title={social.name}
                   initial={{ opacity: 0, x: -15 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
