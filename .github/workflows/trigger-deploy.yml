@@ -1,0 +1,24 @@
+
+name: Trigger Main Website Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger deployment in main website repository
+        env:
+          GH_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          curl --fail-with-body --request POST \
+            --url https://api.github.com/repos/captainaadesh/captainaadesh.github.io/dispatches \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "X-GitHub-Api-Version: 2022-11-28" \
+            --data '{"event_type":"portfolio-updated"}'
